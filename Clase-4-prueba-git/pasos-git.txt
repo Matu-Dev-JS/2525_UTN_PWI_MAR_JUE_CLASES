@@ -1,0 +1,33 @@
+
+Quiero saber como viene todo en git
+
+    git status
+
+Inicializar repositorio:
+
+    git init
+
+Agregar archivos:
+
+    git add .
+
+Crear una version (commit):
+
+    git commit -m 'comentario del cambio'
+
+Ver registro de commits:
+
+    git log
+
+Eligimos la direccion remota de nuestro repositorio
+
+    git remote add origin https://github.com/Matu-Dev-JS/Test_repository.git
+
+Renombramos a la rama maestra a main
+
+    git branch -M main
+
+Enviamos los cambios de nuestra version (commit)
+    
+    git push -u origin main
+    

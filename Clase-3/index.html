@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./pages/home/home.html">Ir a home</a>
+    <form>
+        <label for="nombre">
+            
+            Ingresa tu nombre:
+        </label>
+        <!-- Solo puede haber un id con el valor nombre en este HTML -->
+        <input id="nombre" name="nombre" type="text" minlength="3" maxlength="20" placeholder="Jonh doe"/>
+
+        <br/>
+
+        <label for="edad">
+            Ingresa tu edad:
+        </label>
+        <!-- Solo puede haber un id con el valor nombre en este HTML -->
+        <input id="edad" name="edad" type="number" min="0" max="100" placeholder="40" required />
+
+        <br/>
+
+        <label for="password">
+            Ingresa una clave secreta:
+        </label>
+        <input id="password" name="password" type="password"/>
+        
+        <br/>
+
+        <label for="volumen">
+            Ingresa tu volumen de sonido preferido:
+        </label>
+        <input type="range" id="volumen" name="volumen" min="1" max="100" value="50">
+
+        <br>
+
+        <label for="birthday_date">Fecha de cumpleaños: </label>
+        <input id="birthday_date" type="date" name="date" />
+            
+        <br />
+
+        <span>Que lenguajes conoces?</span>
+        <label for="HTML">HTML:</label>
+        <input type="checkbox" id="HTML" name="lenguaje_conocido"/>
+        <label for="CSS">CSS:</label>
+        <input type="checkbox" id="CSS"  name="lenguaje_conocido"/>
+        <label for="JS">JS:</label>
+        <input type="checkbox" id="JS"  name="lenguaje_conocido"/>
+
+        <span>Cual es tu lenguaje favorito?</span>
+        <label for="favorite_HTML">HTML:</label>
+        <input type="radio" id="favorite_HTML" name="lenguaje_favorito"/>
+        <label for="favorite_CSS">CSS:</label>
+        <input type="radio" id="favorite_CSS"  name="lenguaje_favorito"/>
+        <label for="favorite_JS">JS:</label>
+        <input type="radio" id="favorite_JS"  name="lenguaje_favorito"/>
+
+        <label for="pais">Selecciona el pais:</label>
+        <select name="pais" id="pais" >
+            
+            <option value="AR">Argentina</option>
+            <option value="BR">Brasil</option>
+            <option value="UY">Uruguay</option>
+            <option value="" selected disabled >No seleccionado</option>
+        </select>
+
+        <br/>
+
+        <label for="descripcion">Ingresar una descripcion personal:</label>
+        <textarea id="descripcion" name="descripcion" rows="5" cols="20" placeholder="Yo me llamo..."></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+
+   
+</body>
+</html>

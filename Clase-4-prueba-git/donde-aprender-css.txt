@@ -1,0 +1,3 @@
+https://www.codecademy.com/resources/docs/css
+https://www.w3schools.com/css/
+https://www.freecodecamp.org/learn/full-stack-developer/

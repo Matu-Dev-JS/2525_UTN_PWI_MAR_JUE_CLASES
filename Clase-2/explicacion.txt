@@ -1,0 +1,57 @@
+Etiqueta en HTML:
+
+Etiquetas de autocierre
+<elemento>
+
+Etiquetas de apertura y cierre:
+<elemento></elemento>
+
+Ejemplo:
+
+<p>Hola que tal?</p>
+
+
+Las etiquetas pueden anidarse (nesting) a otras etiquetas
+
+<abuelo><padre><hijo></hijo></padre></abuelo>
+
+Esto seria un mal anidamiento:
+<padre><hijo></padre></hijo>
+
+El parrafo esta anidado dentro de la caja
+<caja><p></p></caja>
+
+
+Buena practica: es una accion no obligatoria pero recomendada
+
+Recomiendo usar indentacion  (buena practica)
+Tabulacion: es igual a una x cantidad de espacios
+Indentacion:
+
+<abuelo>
+	<padre>
+		<hijo>
+		</hijo>
+	</padre>
+</abuelo>
+
+
+En HTML hay ciertos elementos definidos:
+
+html: Define el principio y fin del documento
+body: El contenido de la pagina
+head: Configuraciones del documento/pagina
+title: El titulo de la pagina
+
+p: parrafo
+button: un boton
+h1, h2, h3, h4, h5, h6: se usan para hacer encabezados
+ul: Lista desordenada
+ol: Lista ordenada
+li: Elemento de lista
+
+Cada elemento puede tener atributos y ellos pueden tener valor
+
+Ejemplo
+<caja color='rojo' tamaño='grande'></caja>
+

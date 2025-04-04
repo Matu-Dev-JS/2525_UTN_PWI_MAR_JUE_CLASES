@@ -1,0 +1,9 @@
+Control + S = Guardar
+Control + z = Ir atras o deshacer
+Control + y = Ir adelante o rehacer
+Control + c = Copiar
+Control + v = Pegar
+Control + x = Cortar
+Control + k + c / Alt + Shift + a = Hacer un comentario
+Alt + z = Text wrap (Hace que el contenido de texto se ajuste al ancho disponible)
+Control + K + S = Ver toda la lista de shortcuts
