@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wavefont:wght@4..1000&display=swap');
+
+/* 
+Esto es mala practica, no se hace, usa clases en cambio
+#titulo-super-especial{
+    color: orange;
+} 
+*/
+
+/* Selector universal, afecta a todos los elementos pero es el MENOS especifico */
+
+*{
+    font-family: "Poppins", sans-serif;
+    /* color: rgb(162, 255, 0); */
+}
+
+/* Cascade style sheet = Hoja de estilos en cascada */
+
+h1{
+    /* Esto es la PEOR PRACTICA, NO USAR !important */
+    color: red /* !important */;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+/* Selectores */
+
+/* h1 es un selector de elementos */
+
+/* Selector de clase es: .nombre-de-clase */
+
+
+
+.titulo-especial{
+    color: rgb(4, 255, 0);
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+
+    font-family: "Wavefont", system-ui;
+}
+
+.titulo-especial--chiquito{
+    font-size: 14px;
+}
+
+
+.parrafo{
+    font-size: 24px;
+    color: goldenrod;
+    /* 
+    Tipo de decoracion: (Se valen multiples)
+    tachar: line-through
+    sobrerayar: overline
+    underline: subrayar
+
+    Estilo de la linea decorativa:
+    -dashed
+    -double
+    -dotted
+    -solid
+    -wavy
+
+    Color de la linea decorativa
+
+    Espesor: unidad de tamaño
+    */
+    /* text-decoration: line-through overline underline wavy; */
+    /* text-decoration: red wavy underline 3px; */
+    text-decoration: line-through goldenrod solid 1px;
+    letter-spacing: 3px;
+    word-spacing: 40px;
+
+    /* font-family: 'Times New Roman', Times, serif; */
+    width: 600px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.span-especial{
+    width: 400px;
+    height: 400px;
+    background-color: chartreuse;
+}
+.input-especial{
+    width: 400px;
+    height: 300px;
+    background-color: darkmagenta;
+}
+
+.parrafo-2{
+    font-style: italic;
+    font-weight: 900;
+}

@@ -1,0 +1,6 @@
+-Entrar a 5 paginas a eleccion y plantear cual es el header, footer, main, aside
+
+-Hacer el navegador (EN HTML) de hostinger y de mdn (solo el aside de la izquierda)
+    Hostinger: https://www.hostinger.com/ar?utm_campaign=Brand-Exact|NT:Se|LO:AR&utm_medium=ppc&gad_source=1&gclid=Cj0KCQjw2N2_BhCAARIsAK4pEkVpfrcDXDeKKvO70IN40_Ple8VKua4ASNhSRt0pYA1IHJz3jPd0PHsaAlCSEALw_wcB
+
+    MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Content_categories

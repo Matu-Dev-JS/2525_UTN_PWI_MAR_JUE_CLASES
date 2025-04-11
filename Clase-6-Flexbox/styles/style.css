@@ -1,0 +1,26 @@
+
+/* Casi siempre hacer este estilo */
+li{
+    /* Quito las decoraciones de las listas */
+    /* La propiedad list-style-type solo se la puedo aplicar a un LI */
+    list-style-type: none;
+}
+
+/* 
+Esto si bien tambien taparia al ingredient-item de abajo al tener mayor especificidad es una MALA practica tener al modificador por debajo de la clase
+ul .ingredient-item--circulito{
+    list-style-type: circle;
+} */
+
+.ingredient-item{
+    list-style-type: disc;
+}
+
+.ingredient-item--circulito{
+    list-style-type: circle;
+}
+
+.step-by-step-list li{
+    list-style-type: georgian;
+}
+

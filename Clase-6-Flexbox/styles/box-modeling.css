@@ -1,0 +1,49 @@
+
+/* 
+Hay muchos elementos en HTML que van a tener margenes por defecto
+
+Si queremos que TODOS los elementos no tengan margen por defecto que podriamos hacer?
+*/
+
+/* A esto le decimos normalizacion (normalize.css) */
+*{
+    margin: 0;
+    padding: 0;
+    /* Cuando le des dimensiones a la caja (ancho o alto) se aplicaran a x caja */
+    box-sizing: border-box;
+}
+
+
+h1{
+    
+    /* background-color: rgb(181, 232, 232); */
+    /* 
+    margin-top: 40px;
+    margin-left: 24px; 
+    */
+    /* margin: vertical horizontal */
+    margin: 24px 70px;
+
+    /* margin: top horizontal bottom */
+    /* margin: 24px 70px 180px; */
+
+    /* margin: top right bottom left */
+    /* margin: 24px 70px 180px 40px; */
+    /* border: 3px dotted rgb(51, 160, 0); */
+    border-bottom: 1px solid #c8ccd1;
+    border-right: 1px solid #c8ccd1;
+    /* padding-left: 24px; 
+    padding-top: 40px; */
+    padding: 48px 16px;
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+
+}
+
+
+.step-by-step-list{
+    border-left: 2px solid #c8ccd1 ;
+    margin-left: 24px;
+    padding: 40px;
+}
