@@ -9,10 +9,16 @@
     height: 100vh; /* viewport height, 100vh = 100% del alto de mi viewport */
     background-color: rgb(81, 147, 24);
     display: flex;
-    flex-direction: row; /* flex-direction nos permite cambiar la direccion de mi flexbox (por defecto horizontal) */
-    justify-content: center; /* mueve a mis elementos horizontalmente */
-    align-items: center; /* Mueve los elementos en el eje vertical */
+    flex-direction: column; /* flex-direction nos permite cambiar la direccion de mi flexbox (por defecto horizontal) */
+    justify-content:start; /* 
+    JUSTIFY-CONTENT:
+    Si estamos en row, mueve a mis elementos horizontalmente, si estamos en column mueve a los elementos verticalmente */
+    align-items: center; /* 
+    ALING-ITEMS:
+    Si estamos en row, mueve los elementos en el eje vertical, si estamos en column mueve los elementos en el eje horizontal
+    */
     gap: 20px;
+   /*  padding: 0 20px; */
 }
 
 .hijo{
