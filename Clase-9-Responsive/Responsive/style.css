@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 * {
     padding: 0;
     margin: 0;
@@ -42,6 +43,10 @@ header {
     display: none;
 }
 
+header .btn-menu{
+    display: none;
+}
+
 /* Mediaquerie */
 /* si se cumple que mi pantalla mide hasta (o menos) <= 1000px voy a ejecutar este bloque de codigo */
 @media screen and (max-width: 1000px) {
@@ -65,3 +70,15 @@ header {
         background-color: white;
     }
 }
+
+/* si se cumple que mi pantalla mide hasta (o menos) <= 650px voy a ejecutar este bloque de codigo */
+@media screen and (max-width: 768px) {
+    header .btn-menu{
+        display: flex ;
+    }
+    nav{
+        display: none;
+    }
+}
+
+/* Siempre tengan en mente la medida 320px o 280px */
