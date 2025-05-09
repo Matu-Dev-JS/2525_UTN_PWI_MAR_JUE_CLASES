@@ -1,0 +1,17 @@
+QUE ES JS?
+Javascript es un lenguaje de programacion
+Programar nos permite definir algoritmos (Recetas) para resolver problemas
+Para quien esta creado el lenguaje de programacion? Para nosotros
+Programamos para dar ordenes a la computadora
+La computadora sabe leer javascript? NO
+Que lenguaje habla la computadora? Binario (0 1) (Algo muy dificil para un ser humano)
+
+(ESTO SOLO APLICA A LENGUAJES INTERPRETADOS) (Si quieren investiguen lenguajes compilados vs lenguajes interpretados)
+JAVASCRIPT es un lenguaje interpretado
+Por quien? por el interprete de Javascript, V8 Engine (es una aplicacion hecha en c++ que permite traducir Javascript a code machine)
+A tener en cuenta: V8 Engine tiene distintas versiones, dependiendo del navegador y sistema operativo en el cual se ejecute
+La ventaja de tener un interprete es: WORA (Write Once Run Anywhere) Escribimos un solo codigo de JS y dependiendo de donde se ejecute varia el interprete, PERO NO TENEMOS QUE ESCRIBIR DISTINTOS CODIGOS DE JS
+
+JAVASCRIPT ES UN LENGUAJE DE ALTO NIVEL
+JAVASCRIPT TIENE EL MONOPOLIO DE LA WEB (Es bueno o malo?)
+Que alcance tiene JAVASCRIPT en el mundo de la programacion? En todo!
