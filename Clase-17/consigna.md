@@ -1,3 +1,8 @@
+# Consigna: Mostrar mensajes en HTML
+
+## Código JavaScript proporcionado
+
+```javascript
 const messages = [
     {
         author: "Pepe",
@@ -61,12 +66,13 @@ const messages = [
     }
 ]
 
+## Requerimiento
 
-//Por cada mensaje en el HTML deberan mostrar:
-/* 
-    <div class='message-card'>
-        <h3>${message.author}</h3>
-        <p>${message.text}</p>
-        <span>${message.created_at}</span>
-    </div>
-*/
+Por cada mensaje en el HTML deberán mostrar:
+
+```html
+<div class='message-card'>
+    <h3>${message.author}</h3>
+    <p>${message.text}</p>
+    <span>${message.created_at}</span>
+</div>
