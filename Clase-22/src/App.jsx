@@ -2,12 +2,17 @@ import React from 'react'
 import MyComponent from './Components/MyComponent'
 import Navbar from './Components/Navbar'
 import CardArticle from './Components/CardArticle/CardArticle'
+import CardColorPalette from './Components/CardColorPalette/CardColorPalette'
 
 function App() {
 
   return (
     <div>
-
+      <CardColorPalette
+        likes={25} 
+        time={'58 Minutes'} 
+        colors={["#FCD8CD", "#FEEBF6", "#EBD6FB","#687FE5"]} 
+      />
       <Navbar/>
       {/* Instancia/invocacion de un componente */}
       {/* <MyComponent nombre='pepe' color='rojo' />

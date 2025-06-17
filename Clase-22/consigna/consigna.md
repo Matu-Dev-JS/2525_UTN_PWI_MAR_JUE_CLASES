@@ -7,5 +7,5 @@ Ejemplo de uso:
 <CardColorPalette 
     likes={9} 
     time={'58 minutes'} 
-    colors={['#2132DS', '#2132DS','#2132DS', '#2132DS'} 
+    colors={['#2132DS', '#2132DS','#2132DS', '#2132DS']} 
 />
