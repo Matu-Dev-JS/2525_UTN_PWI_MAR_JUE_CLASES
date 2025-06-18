@@ -3,41 +3,26 @@ import "./CardColorPalette.css";
 
 function CardColorPalette (props) {
     console.log(props)
+
+    const lista_colores_jsx = props.colors.map(
+        function(color, index){
+            return (
+                <div 
+                    key={color + index}
+                    className={`card_palette__content__color card_palette__content__color${index}` }  
+                    style={
+                        { backgroundColor: color }
+                    }
+                >
+                    <span className="card_palette__content__color-text">{color}</span>
+                </div>
+            )
+        }
+    )
     return (
         <article className="card_palette">
             <a href="#" className="card_palette__content">
-                <div 
-                    className="card_palette__content__color card_palette__content__color1"  
-                    style={
-                        { backgroundColor: props.colors[0] }
-                    }
-                >
-                    <span className="card_palette__content__color-text">{props.colors[0]}</span>
-                </div>
-                <div 
-                    className="card_palette__content__color card_palette__content__color2"
-                    style={
-                        { backgroundColor: props.colors[1] }
-                    }
-                >
-                    <span className="card_palette__content__color-text">{props.colors[1]}</span>
-                </div>
-                <div 
-                    className="card_palette__content__color card_palette__content__color3"
-                    style={
-                        { backgroundColor: props.colors[2] }
-                    }
-                >
-                    <span className="card_palette__content__color-text">{props.colors[2]}</span>
-                </div>
-                <div 
-                    className="card_palette__content__color card_palette__content__color4"
-                    style={
-                        { backgroundColor: props.colors[3] }
-                    }
-                >
-                    <span className="card_palette__content__color-text">{props.colors[3]}</span>
-                </div>
+                {lista_colores_jsx}
             </a>
             <div className="card_palette__footer">
                 <div className="card_palette__likes">
@@ -53,5 +38,10 @@ function CardColorPalette (props) {
         </article>
     )
 }
+
+/* 
+
+
+*/
 
 export default CardColorPalette;
