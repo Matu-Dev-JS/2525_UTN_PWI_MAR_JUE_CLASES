@@ -37,7 +37,24 @@ function App() {
     setContador(contador - 1)
   }
 
-  
+  /* 
+  Crear un estado con esta valor inicial: 
+  [
+    'tarea 1',
+    'tarea 2',
+    'tarea 3'
+  ]
+
+  Mostrar la lista en la pagina, cada tarea tendra que ser un:
+  <div>
+    <p>{tarea}</p>
+    <button>Eliminar</button>
+    <hr/>
+  </div>
+
+  */
+
+
   return (
     <div>
       <button 
