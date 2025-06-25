@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Message from '../Message/Message'
+import { MessagesContext } from '../../Context/MessagesContext'
 
-export default function Chat({messages, handleEliminarMensaje}) {
+export default function Chat() {
+    const { messages } = useContext(MessagesContext)
     if(messages.length === 0){
         return (
             <div>
@@ -21,7 +23,6 @@ export default function Chat({messages, handleEliminarMensaje}) {
                             hora={message.hora}
                             texto={message.texto}
                             status={message.status}
-                            handleEliminarMensaje={handleEliminarMensaje}
                         />
                     )
                 })

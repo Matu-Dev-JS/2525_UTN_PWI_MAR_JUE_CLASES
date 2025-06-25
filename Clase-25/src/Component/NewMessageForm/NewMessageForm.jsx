@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MessagesContext } from '../../Context/MessagesContext'
 
-export default function NewMessageForm({ addNewMessage }) {
+export default function NewMessageForm() {
+    /* const result = useContext(MessagesContext)
+    alert(result.dato) */
+    const {addNewMessage} = useContext(MessagesContext)
     const handleSubmitNewMessage = (e) => {
         //Esta funcion se encarga de manejar el envio del formulario
         e.preventDefault()
