@@ -3,7 +3,7 @@ import Message from '../Message/Message'
 import { MessagesContext } from '../../Context/MessagesContext'
 
 export default function Chat() {
-    const { messages } = useContext(MessagesContext)
+    const {messages} = useContext(MessagesContext)
     if(messages.length === 0){
         return (
             <div>

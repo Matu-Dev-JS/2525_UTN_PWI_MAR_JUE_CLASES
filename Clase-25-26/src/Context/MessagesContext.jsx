@@ -1,7 +1,13 @@
 import { createContext, useState } from "react";
 
 //Creamos un contexto con la funcion createContext()
-export const MessagesContext = createContext()
+export const MessagesContext = createContext(
+    {
+        messages: [],
+        addNewMessage: (text) => {},
+        handleEliminarMensaje: (id_mensaje) => {}
+    }
+)
 
 //children prop: es el contenido que anida mi componente MessagesContextProvider
 const MessagesContextProvider = ({ children }) => {
