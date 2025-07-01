@@ -3,22 +3,20 @@ import HomeScreen from './Screens/HomeScreen/HomeScreen'
 import {Routes, Route} from 'react-router'
 import ContactScreen from './Screens/ContactScreen/ContactScreen'
 import ContactDetailScreen from './Screens/ContactDetailScreen/ContactDetailScreen'
+import { getContactList } from './services/contactService'
+import { getMessagesByContactId } from './services/messagesService'
 function App() {
-	/* 
-	react-router-dom o tambien conocida como react-router 
-	Nos permite manejar enrutamiento en react con distintas estrategias
-	*/
+	
+	
 
-	//PWA = Progressive Web Apps, si quieren hacer aplicaciones desktop basadas en tecnologia web tienen 2 opciones conocidas
-	//React con PWA, Electron.js
 	return (
 		<div>
 			
 			<Routes>
-				{/* Quiero crear una ruta para home que apunte a la direccion '/home' */}
+				
 				<Route
-					path='/home'/* Direccion de la ruta */
-					element={<HomeScreen/>} /* Componente que se mostrara en esa ruta */
+					path='/home'
+					element={<HomeScreen/>} 
 				/>
 				<Route 
 					path='/contacts'

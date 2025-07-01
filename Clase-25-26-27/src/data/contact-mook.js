@@ -1,3 +1,4 @@
+//Este archivo solo contiene la informacion de la app, en futuro lo vamos a eliminar
 const mook_data = {
     contacts: [
         {

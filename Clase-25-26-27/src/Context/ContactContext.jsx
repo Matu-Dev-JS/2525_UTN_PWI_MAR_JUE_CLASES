@@ -1,48 +1,31 @@
 import { createContext, useState } from "react";
+import { getContactList } from "../services/contactService";
 
 
 
 export const ContactContext = createContext({
-    contacts: []
+    contacts: [],
+    isLoadingContacts: true
 })
 
 const ContactContextProvider = ({children}) => {
+    
     const [contacts, setContacts] = useState(
-        [
-            {
-                id: 1,
-                name: 'Pepe',
-                last_time_connected: '14:19',
-                img: "https://resizing.flixster.com/HyNT-XNfqIkd0KbeP0zrKyDQQro=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p90510_p_v10_aa.jpg",
-                last_message: {
-                    id: 1,
-                    text: 'Que tal, tanto tiempo!'
-                },
-                unread_messages: 1
-            },
-            {
-                id: 2,
-                name: 'Lucia',
-                last_time_connected: '15:19',
-                img: "https://resizing.flixster.com/HyNT-XNfqIkd0KbeP0zrKyDQQro=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p90510_p_v10_aa.jpg",
-                last_message: {
-                    id: 1,
-                    text: 'Que tal, tanto tiempo!'
-                },
-                unread_messages: 0
-            },
-            {
-                id: 3,
-                name: 'Carlos',
-                last_time_connected: '17:19',
-                img: "https://resizing.flixster.com/HyNT-XNfqIkd0KbeP0zrKyDQQro=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p90510_p_v10_aa.jpg",
-                last_message: {
-                    id: 1,
-                    text: 'Que tal, tanto tiempo!'
-                },
-                unread_messages: 20
-            }
-        ]
+        [] //Empieza vacio
+    )
+    const [isLoadingContacts, setIsLoadingContacts] = useState(true)
+
+    //En una aplicacion real una consulta lleva tiempo en resolverse
+    //setTimeout recibe 2 parametros, una callback con la accion a ejecutar y un tiempo de espera en milisegundos
+
+    setTimeout(
+        () => {
+            //a los 2 segundos cargamos la lista de contactos
+            const contact_list = getContactList() //Obtengo la lista de contactos
+            setContacts(contact_list)
+            setIsLoadingContacts(false)
+        }, 
+        2000
     )
 
 
@@ -50,7 +33,8 @@ const ContactContextProvider = ({children}) => {
         <ContactContext.Provider
             value={
                 {
-                    contacts: contacts
+                    contacts: contacts,
+                    isLoadingContacts: isLoadingContacts
                 }
             }
         >

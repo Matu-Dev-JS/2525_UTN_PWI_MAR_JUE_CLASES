@@ -1,9 +1,15 @@
 import React, { useContext } from "react"
 import ContactItem from "../ContactItem/ContactItem"
 import { ContactContext } from "../../Context/ContactContext"
+import LoaderSpinner from "../LoaderSpinner/LoaderSpinner"
 
 const ContactsList = () => {
-    const {contacts} = useContext(ContactContext)
+    const {contacts, isLoadingContacts} = useContext(ContactContext)
+    if(isLoadingContacts){
+        return (
+            <LoaderSpinner/>
+        )
+    }
     return (
         <div>
             {
