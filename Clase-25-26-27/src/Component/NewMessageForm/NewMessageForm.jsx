@@ -18,7 +18,7 @@ export default function NewMessageForm() {
         <form onSubmit={handleSubmitNewMessage}>
             <div>
                 <label htmlFor="text">Nuevo mensaje:</label>
-                <textarea id='text' name='text' minLength={5} required > </textarea>
+                <textarea id='text' name='text' minLength={5} required ></textarea>
             </div>
             <button type='submit'>Enviar mensaje</button>
         </form>

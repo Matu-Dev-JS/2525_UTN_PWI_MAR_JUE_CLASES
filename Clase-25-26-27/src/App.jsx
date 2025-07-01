@@ -15,7 +15,7 @@ function App() {
 			<Routes>
 				
 				<Route
-					path='/home'
+					path='/contacts/:contact_id/messages' /* Configuramos el prametro de busqueda :contact_id */
 					element={<HomeScreen/>} 
 				/>
 				<Route 

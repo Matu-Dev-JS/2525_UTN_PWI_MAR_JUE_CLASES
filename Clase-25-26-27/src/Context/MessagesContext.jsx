@@ -1,4 +1,6 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+import { getMessagesByContactId } from "../services/messagesService";
+import { useParams } from "react-router";
 
 
 
@@ -6,43 +8,20 @@ import { createContext, useState } from "react";
 export const MessagesContext = createContext(
     {
         messages: [],
+        isMessagesLoading: true, 
         addNewMessage: (text) => { },
-        handleEliminarMensaje: (id_mensaje) => { }
+        handleEliminarMensaje: (id_mensaje) => { },
+        loadMessages: (contact_id) => {}
     }
 )
 
 //children prop: es el contenido que anida mi componente MessagesContextProvider
 const MessagesContextProvider = ({ children }) => {
-    const [messages, setMessages] = useState([
-        {
-            emisor: 'YO',
-            hora: '23:10',
-            id: 1,
-            texto: 'Hola que tal?',
-            status: 'visto'
-        },
-        {
-            emisor: 'USUARIO',
-            hora: '23:11',
-            id: 2,
-            texto: 'Si, hoy aprendi estados',
-            status: 'visto'
-        },
-        {
-            emisor: 'YO',
-            hora: '23:12',
-            id: 3,
-            texto: 'Eso que significa 🤓?',
-            status: 'no-visto'
-        },
-        {
-            emisor: 'YO',
-            hora: '23:13',
-            id: 4,
-            texto: 'Estas ahi?',
-            status: 'no-recibido'
-        },
-    ])
+   
+
+
+    const [messages, setMessages] = useState([])
+    const [isMessagesLoading, setIsMessagesLoading] = useState(true)
 
 
     const handleEliminarMensaje = (id_mensaje) => {
@@ -62,13 +41,31 @@ const MessagesContextProvider = ({ children }) => {
         setMessages(clon_messages)
     }
 
+    const loadMessages = (contact_id) => {
+        //Antes de cargar pasamos el cargando a verdadero asi se muestra el loader
+        setIsMessagesLoading(true)
+
+        //Dentro de 2 segundos ocurrira esto
+        setTimeout(
+            () => {
+                const messages = getMessagesByContactId(contact_id)
+                setMessages(messages)
+                setIsMessagesLoading(false)
+            },
+            2000
+        )
+        
+    }
+
     return (
         <MessagesContext.Provider
             value={
                 {
                     messages: messages,
+                    isMessagesLoading: isMessagesLoading, 
                     addNewMessage: addNewMessage,
-                    handleEliminarMensaje: handleEliminarMensaje
+                    handleEliminarMensaje: handleEliminarMensaje,
+                    loadMessages: loadMessages
                 }
             }
         >
