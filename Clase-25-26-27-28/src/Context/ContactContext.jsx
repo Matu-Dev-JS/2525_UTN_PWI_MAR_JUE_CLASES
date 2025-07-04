@@ -25,7 +25,7 @@ const ContactContextProvider = ({children}) => {
             setContacts(contact_list)
             setIsLoadingContacts(false)
         }, 
-        2000
+        1000
     )
 
 

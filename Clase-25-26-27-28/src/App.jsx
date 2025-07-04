@@ -13,7 +13,10 @@ function App() {
 		<div>
 			
 			<Routes>
-				
+				<Route
+					path='/' 
+					element={<ContactScreen/>} 
+				/>
 				<Route
 					path='/contacts/:contact_id/messages' /* Configuramos el prametro de busqueda :contact_id */
 					element={<HomeScreen/>} 
@@ -23,7 +26,7 @@ function App() {
 					element={<ContactScreen/>}
 				/>
 				<Route
-					path='/contact-detail'
+					path='/contacts/:contact_id/detail'
 					element={<ContactDetailScreen/>}
 				/>
 			</Routes>

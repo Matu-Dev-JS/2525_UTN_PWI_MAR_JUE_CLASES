@@ -3,7 +3,7 @@ import Chat from '../../Component/Chat/Chat'
 import NewMessageForm from '../../Component/NewMessageForm/NewMessageForm'
 import { IoIosBody, IoIosBackspace } from "react-icons/io";
 import Swal from 'sweetalert2'
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 import { MessagesContext } from '../../Context/MessagesContext';
 import LoaderSpinner from '../../Component/LoaderSpinner/LoaderSpinner';
 
@@ -41,6 +41,7 @@ export default function HomeScreen() {
 
     return (
         <div>
+            <Link to={`/contacts/${contact_id}/detail`}>Ir a detalle de contacto</Link>
             <h3>
                 Lets go for a <IoIosBody />?
             </h3>
